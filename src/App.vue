@@ -19,6 +19,8 @@ body {
     overflow-y: hidden;
 }
 
+center{display: none}
+
 #app {
     position: absolute;
     top: 0;

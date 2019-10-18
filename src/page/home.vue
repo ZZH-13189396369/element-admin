@@ -43,7 +43,7 @@
           <el-col :span="24">
             <div @click="changeRouter(index)" v-for="(option, index) in arry" class="cus-tab-box" :class="activepath==option.path?'activeTab':''">
               <span>{{option.name}}</span>
-              <span @click.stop="arry.length!=1 && removeTab(index)"><i class="fa fa-times close-icon" aria-hidden="true"></i></span>
+              <span @click.stop="arry.length!=1 && removeTab(index)"><i class="fa el-icon-close" aria-hidden="true"></i></span>
             </div>
           </el-col>
          </el-row>
@@ -293,11 +293,11 @@ export default {
           color: #fff;
           border-color: #fff;
         }
-        .close-icon {
+        .el-icon-close {
           transform: rotate(0deg);
           transition: transform 1s;
         }
-        .close-icon:hover {
+        .el-icon-close:hover {
           transform: rotate(180deg);
         }
       }
